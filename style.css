@@ -15,3 +15,483 @@ Text Domain: warraich_traders
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+:root{
+    --blue: #074284;
+    --lime: #90ee90;
+    --red: #f00;
+    --casal:#475153;
+    --white: #fff;
+    --black: #000;
+    --gainsboro: #DBE3DE;
+    --light-gray: #ebeaea;
+    --dark-gray: #333;
+    --gray: #757575; 
+    --great-dark-blue: #17a2b8;
+    --light-grayish-blue: #dee2e6;
+}
+section{
+    overflow: hidden;
+}
+.clearboth{
+    clear: both;
+}
+p{
+    color: var(--dark-gray);
+}
+.site_border{
+    border-bottom: 1px solid  var(--black);
+}
+.site_nav_links{
+    padding: 18px 12px!important;
+    font-size: 17px;
+    color: var(--black);
+}
+.site_nav_links:hover{
+    color: var(--blue);
+}
+.site_h1{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--dark-gray);
+}
+.site_h3{
+    font-size: 24px;
+}
+h2, h3{
+    font-weight: 400;
+}
+h4{
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+.icon-wrap{
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    border-radius: 50%;
+}
+.site_btn{
+    background: var(--blue);
+}
+.site_btn:hover{
+    background: var(--casal);
+}
+header .header-top{
+    font-size: 0.8461538462rem;
+}
+header .header-top .top-site-bar ul li{
+    float: left;
+    color: var(--gray);
+    padding: 8px;
+    padding-bottom: 0;
+}
+.site-ancer{
+    font-size: 0.8461538462rem;
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1rem;
+}
+.site-ancer:hover{
+    color: var(--blue);
+}
+.site-ancer img{
+    max-height: 65px;
+}
+section .carousel .carousel-inner .carousel-item .carousel-caption h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-shadow: 2px 2px var(--black)!important;
+}
+.col-4 img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.col-md-3 a img{
+    height: auto;
+    max-width: 100%;
+}
+.col-md-4 ul li{
+    float: left;
+}
+.col-md-4 ul li a img{
+    width: 85px;
+    height: 70px;
+    margin: 5px;
+}
+.our_team_img img{ 
+    width: 100%;
+}
+.bg_img{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg_index{
+    /* background-image: url(../images/home-price-bg.jpg); */
+    background: var(--black);
+}
+.bg_about{
+    /* background-image: url(../images/about-us.jpg); */
+    background: var(--black);
+}
+.bg_house_price{
+    /* background-image: url(../images/home-price-bg.jpg); */
+    background: var(--black);
+}
+.bg_contact{
+    /* background-image: url(../images/contact-us.jpg); */
+    background: var(--black);
+}
+footer{
+    /* background-image: url(../images/home-price-bg.jpg); */
+    background: var(--black);
+    color: var(--gray);
+}
+footer p{
+    color: var(--gray);
+}
+
+/************* Dashboard Css ************/
+.dashboard_links{
+    color: var(--white);
+    cursor: pointer;
+}
+.dashboard_links:hover{
+    background: var(--lime);
+    color: var(--black)!important;
+}
+/* .dashboard_links:checked{
+    background: var(--blue);
+    color: var(--black)!important;
+} */
+.dashboard_sub_ul li a:hover{
+    color: var(--black)!important;
+}
+.bg-gray{
+    background-color: var(--light-grayish-blue)!important;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.badge-pill{
+    background: var(--white);
+    color: var(--black);
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+.badge-pill-2{
+    color: var(--white);
+    background-color: var(--great-dark-blue);
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+.dashboard_sub_navbar_1, .dashboard_sub_navbar_2, .dashboard_sub_navbar_3, .dashboard_sub_navbar_4, .dashboard_sub_navbar_5{
+    display: none;
+}
+span.required{
+    color:  var(--red);
+}
+.dashboard_btn{
+    color: var(--blue);
+}
+.dashboard_btn:hover{
+    color: var(--gray);
+}
+.float-right{
+    float: right;
+}
+.fa-plus, .fa-minus{
+    color: var(--blue)!important;
+}
+.fa-minus{
+    display: none;
+}
+.card-header{
+    font-size: 20px!important;
+}
+.card-body p{
+    color: var(--white) !important;
+}
+.dropdown-menu, select{
+    max-height: 280px;
+    overflow-y: auto;
+}
+.table tbody tr td{
+    padding: 5px;
+}
+.row .col-lg-10 .print_preview_container{
+    background-color: var(--gainsboro);
+    padding: 20px 20px;
+    margin: 40px auto 40px auto;
+}
+.toggle_card_1, .toggle_card_2, .toggle_card_3, .toggle_card_4, .toggle_card_5, .toggle_card_6, .toggle_card_7, .toggle_card_8, .toggle_card_9, .toggle_card_10, .toggle_card_11, .toggle_card_12{
+    display: none;
+}
+.print_header span{
+    justify-content: center;
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 50px;
+    color:  var(--black);
+    line-height: normal;
+}
+.invoice_print_preview_content p strong{
+    margin-right: 15px;
+}
+.pagination li{
+    padding: 5px 10px;
+    border: 1px solid var(--light-grayish-blue);
+    margin: auto 5px;
+}
+.pagination li a{
+    text-decoration: none;
+}
+
+/******************* Nav Bar *********************/
+
+.header-main .navbar .container{
+    max-width: 72rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.logo-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn{
+    flex: 3;
+    display: flex;
+}
+
+.nav-links{
+    flex: 2;
+}
+
+.log-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.logo span{
+    font-weight: 300;
+}
+
+.btn{
+    display: inline-block;
+    font-size: .8rem;
+    border: none;
+    margin: 0 .2rem;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.btn.transparent, .btn.solid:hover{
+    color: #69bde7;
+}
+
+.nav-links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link > a{
+    line-height: 3rem;
+    color: #000;
+    padding: 0 .8rem;
+    letter-spacing: 1px;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.nav-link > a > i{
+    margin-left: .2rem;
+}
+
+.nav-link:hover > a{
+    transform: scale(1.1);
+}
+
+.hamburger-menu-container{
+    flex: 1;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburger-menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hamburger-menu div{
+    width: 1.6rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    position: relative;
+    z-index: 1001;
+    transition: .5s;
+}
+
+.hamburger-menu div:before,
+.hamburger-menu div:after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.hamburger-menu div:before{
+    transform: translateY(-7px);
+}
+
+.hamburger-menu div:after{
+    transform: translateY(7px);
+}
+
+#check{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 90000;
+    cursor: pointer;
+    opacity: 0;
+    display: none;
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div{
+    background-color: transparent;
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:before{
+    transform: translateY(0) rotate(-45deg);
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
+    transform: translateY(0) rotate(45deg);
+}
+
+@keyframes animation{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 920px){
+    .hamburger-menu-container{
+        display: flex;
+    }
+
+    #check{
+        display: block;
+    }
+
+    .nav-btn{
+        position: fixed;
+        height: calc(100vh - 3rem);
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        background-color: #69bde7;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: .65s;
+    }
+
+    #check:checked ~ .nav-btn{
+        transform: translateX(0);
+    }
+
+    #check:checked ~ .nav-btn .nav-link,
+    #check:checked ~ .nav-btn .log-sign{
+        animation: animation .5s ease forwards var(--i);
+    }
+
+    .nav-links{
+        flex: initial;
+        width: 100%;
+    }
+
+    .nav-links > ul{
+        flex-direction: column;
+    }
+
+    .nav-link{
+        width: 100%;
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    .nav-link > a{
+        line-height: 1;
+        padding: 1.6rem 2rem;
+    }
+
+    .nav-link:hover > a{
+        transform: scale(1);
+        background-color: #50a9d6;
+    }
+
+    .nav-link > a > i{
+        font-size: 1.1rem;
+        transform: rotate(-90deg);
+        transition: .7s;
+    }
+
+    .log-sign{
+        flex: initial;
+        width: 100%;
+        padding: 1.5rem 1.9rem;
+        justify-content: flex-start;
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
