@@ -301,6 +301,7 @@ span.required{
     font-size: .8rem;
     border: none;
     margin: 0 .2rem;
+    margin-bottom: 15px;
     transition: .3s;
     text-transform: uppercase;
 }

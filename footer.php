@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3 class="mb-3">
-                        <img src="images/logo.png" style="width: 85px; height: 75px;">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" style="width: 85px; height: 75px;">
                     </h3>
                     <p>
                         We have completed 5 projects, each project consists of around 50 houses.
@@ -44,12 +44,12 @@
                 <div class="col-md-4">
                     <h3 class="text-white mb-5">Recent Photos</h3>
                     <ul class="list-unstyled">
-                        <li><a href=""><img src="images/gallery1.jpg"></a></li>
-                        <li><a href=""><img src="images/gallery2.jpg"></a></li>
-                        <li><a href=""><img src="images/gallery3.jpg"></a></li>
-                        <li><a href=""><img src="images/gallery4.jpg"></a></li>
-                        <li><a href=""><img src="images/gallery5.jpg"></a></li>
-                        <li><a href=""><img src="images/gallery6.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg"></a></li>
+                        <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg"></a></li>
                     </ul>
                 </div><!--col-md-4-->
             </div><!--row-->
