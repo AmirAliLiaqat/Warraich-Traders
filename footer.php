@@ -66,5 +66,7 @@
     </footer>
     <!-- Footer End -->
 
+    <?php wp_footer(); ?>
+
 </body>
 </html>
