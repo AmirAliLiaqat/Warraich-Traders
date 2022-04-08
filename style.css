@@ -27,6 +27,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     --dark-gray: #333;
     --gray: #757575; 
     --great-dark-blue: #17a2b8;
+    --great-light-blue: #69bde7;
     --light-grayish-blue: #dee2e6;
 }
 section{
@@ -62,8 +63,8 @@ h2, h3{
     font-weight: 400;
 }
 h4{
-    font-size: 18px;
-    color: var(--dark-gray);
+    font-size: 18px !important;
+    color: var(--dark-gray) !important;
 }
 .icon-wrap{
     border: 1px solid var(--light-gray);
@@ -71,10 +72,10 @@ h4{
     border-radius: 50%;
 }
 .site_btn{
-    background: var(--blue);
+    background: var(--blue) !important;
 }
 .site_btn:hover{
-    background: var(--casal);
+    background: var(--casal) !important;
 }
 header .header-top{
     font-size: 0.8461538462rem;
@@ -115,7 +116,7 @@ section .carousel .carousel-inner .carousel-item .carousel-caption h1{
     float: left;
 }
 .col-md-4 ul li a img{
-    width: 85px;
+    width: 80px;
     height: 70px;
     margin: 5px;
 }
@@ -267,6 +268,11 @@ span.required{
     align-items: center;
 }
 
+.custom-logo{
+    max-width: 80px;
+    max-height: 65px;
+}
+
 .nav-btn{
     flex: 3;
     display: flex;
@@ -296,7 +302,7 @@ span.required{
     font-weight: 300;
 }
 
-.btn{
+.solid{
     display: inline-block;
     font-size: .8rem;
     border: none;
@@ -306,8 +312,8 @@ span.required{
     text-transform: uppercase;
 }
 
-.btn.transparent, .btn.solid:hover{
-    color: #69bde7;
+.solid:hover{
+    color: var(--great-light-blue) !important ;
 }
 
 .nav-links > ul{
@@ -316,11 +322,12 @@ span.required{
     align-items: center;
 }
 
-.nav-link{
+.nav-links > ul li{
     position: relative;
+    list-style: none;
 }
 
-.nav-link > a{
+.nav-links > ul li > a{
     line-height: 3rem;
     color: #000;
     padding: 0 .8rem;
@@ -334,11 +341,15 @@ span.required{
     text-decoration: none;
 }
 
-.nav-link > a > i{
+.nav-links > ul li > a:hover{
+    color: var(--great-light-blue);
+}
+
+.nav-links > ul li > a > i{
     margin-left: .2rem;
 }
 
-.nav-link:hover > a{
+.nav-links > ul li:hover > a{
     transform: scale(1.1);
 }
 
@@ -437,7 +448,7 @@ span.required{
         top: 3rem;
         left: 0;
         width: 100%;
-        background-color: #69bde7;
+        background-color: var(--great-light-blue);
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
