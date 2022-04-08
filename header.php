@@ -23,9 +23,9 @@
                     <div class="col-xl-8">
                         <div class="top-site-bar">
                             <ul class="list-unstyled m-0 p-0">
-                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/phone.png"/></i>&nbsp;&nbsp; 0300-4516820</li>
-                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/clock.png"/></i>&nbsp;&nbsp; MON - SUN: 09 AM - 09 PM</li>
-                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/secured-letter.png"/></i>&nbsp;&nbsp; ch_imtiazali@yahoo.com</a></li>
+                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/phone.png"/>&nbsp;&nbsp; 0300-4516820</li>
+                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/clock.png"/>&nbsp;&nbsp; MON - SUN: 09 AM - 09 PM</li>
+                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/secured-letter.png"/>&nbsp;&nbsp; ch_imtiazali@yahoo.com</a></li>
                             </ul>
                         </div><!--top-site-bar-->
                     </div><!--col-xl-8-->
@@ -33,8 +33,8 @@
                         <div class="top-site-bar">
                             <ul class="list-unstyled m-0 p-0">
                                 <li><a href="" class="site-ancer d-none"><i class="fas fa-power-off"></i></a></li>
-                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/twitter.png"/></i></a></li>
-                                <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/logout-rounded.png"/></i></a></li>
+                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/twitter.png"/></a></li>
+                                <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/logout-rounded.png"/></a></li>
                             </ul>
                         </div><!--top-site-bar-->
                         <div class="clearboth"></div><!--clearboth-->
@@ -50,25 +50,17 @@
                     <input type="checkbox" name="" id="check">
             
                     <div class="logo-container">
-                        <a href="" class="site-ancer"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a>
+                        <?php the_custom_logo(); ?>
                     </div><!--logo-container-->
 
                     <div class="nav-btn">
-                        <div class="nav-links">
-                            <ul>
-                                <li class="nav-link" style="--i: .6s">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li class="nav-link" style="--i: .85s">
-                                    <a href="#">Menu<i class="fas fa-caret-down"></i></a>
-                                </li>
-                                <li class="nav-link" style="--i: 1.1s">
-                                    <a href="#">Services<i class="fas fa-caret-down"></i></a>
-                                </li>
-                                <li class="nav-link" style="--i: 1.35s">
-                                    <a href="#">About</a>
-                                </li>
-                            </ul>
+                        <div class="nav-links"> 
+                            <?php 
+                                wp_nav_menu( array (
+                                    'theme_location' => 'primary',
+                                    'container' => ''
+                                ) ); 
+                            ?>
                         </div><!--nav-links-->
 
                         <div class="log-sign" style="--i: 1.8s">
