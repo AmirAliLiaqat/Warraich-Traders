@@ -42,6 +42,7 @@
                 </div><!--row-->
             </div><!--container-->
        </div><!--header-top-->
+       
        <hr class="mt-2 mb-0">
 
         <div class="header-main">
@@ -63,10 +64,16 @@
                             ?>
                         </div><!--nav-links-->
 
-                        <div class="log-sign" style="--i: 1.8s">
-                            <a href="#" class="btn solid">Log in</a>
-                            <a href="#" class="btn solid">Register</a>
-                        </div><!--log-sign-->
+                        <div class="nav-links" style="--i: 1.8s">
+                            <!-- <a href="#" class="btn solid">Log in</a>
+                            <a href="#" class="btn solid">Register</a> -->
+                            <?php 
+                                wp_nav_menu( array (
+                                    'theme_location' => 'secondary',
+                                    'container' => ''
+                                ) ); 
+                            ?>
+                        </div><!--nav-links-->
                     </div><!--nav-btn-->
 
                     <div class="hamburger-menu-container">

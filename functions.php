@@ -21,6 +21,10 @@ function warraich_traders_theme_setup() {
         'primary'   => __( 'Primary Menu', 'warraich_traders' )
     ) );
 
+    register_nav_menus( array(
+        'secondary'   => __( 'Secondary Menu', 'warraich_traders' )
+    ) );
+
 }
 add_action('after_setup_theme', 'warraich_traders_theme_setup');
 
