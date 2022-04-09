@@ -276,10 +276,7 @@ span.required{
 .nav-btn{
     flex: 3;
     display: flex;
-}
-
-.nav-links{
-    flex: 2;
+    justify-content: inherit;
 }
 
 .log-sign{
