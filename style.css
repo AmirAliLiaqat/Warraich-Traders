@@ -36,6 +36,9 @@ section{
 .clearboth{
     clear: both;
 }
+a{
+    text-decoration: none !important;
+}
 p{
     color: var(--dark-gray);
 }
@@ -105,20 +108,11 @@ section .carousel .carousel-inner .carousel-item .carousel-caption h1{
     text-shadow: 2px 2px var(--black)!important;
 }
 .col-4 img{
-    max-width: 50px;
-    max-height: 50px;
+    width: 50px;
 }
 .col-md-3 a img{
     height: auto;
     max-width: 100%;
-}
-.col-md-4 ul li{
-    float: left;
-}
-.col-md-4 ul li a img{
-    width: 80px;
-    height: 70px;
-    margin: 5px;
 }
 .our_team_img img{ 
     width: 100%;
@@ -150,8 +144,24 @@ footer{
     background: var(--black);
     color: var(--gray);
 }
+footer .wp-block-group__inner-container h3{
+    color: #fff;
+    margin-bottom: 40px;
+}
 footer p{
     color: var(--gray);
+}
+.wp-image-300{
+    width: 70px;
+    height: 70px;
+}
+#block-61, #block-63{
+    display: none;
+}
+.wp-container-5 .wp-block-group__inner-container p:nth-child(2){
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /************* Dashboard Css ************/
