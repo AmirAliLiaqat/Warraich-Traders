@@ -116,12 +116,12 @@ function warraich_traders_widgets_init() {
 }
 add_action('widgets_init', 'warraich_traders_widgets_init');
 
-// // TGM Plugin Activation
-// require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
-// require get_template_directory() . '/inc/install-plugins.php';
+// TGM Plugin Activation
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require get_template_directory() . '/inc/install-plugins.php';
 
-// // Kirki Embedded
-// require get_template_directory() . '/inc/kirki-config.php';
+// Kirki Embedded
+require get_template_directory() . '/inc/kirki-config.php';
 
 // Adding Custom Post Types
 require get_template_directory() . '/inc/projects.php';
