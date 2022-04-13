@@ -17,22 +17,35 @@ get_header();
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div><!--carousel-indicators-->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item carousel_item_1 active">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/banner1.jpg" class="d-block w-100" style="height: 75vh;">
+                        <!-- <?php //$image = get_theme_mod( 'slider_img_1', '' ); ?> -->
                         <div class="carousel-caption d-none d-md-block" style="bottom: 50%;">
-                            <h1>If you want God to bless you, bless others.</h1>
+                            <h1>
+                                <?php 
+                                    echo get_theme_mod( 'slider_text_1', 'If you want God to bless you, bless others.' );
+                                ?>
+                            </h1>
                         </div><!--carousel-caption-->
                     </div><!--carousel-item-->
                     <div class="carousel-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" class="d-block w-100" style="height: 75vh;">
                         <div class="carousel-caption d-none d-md-block" style="bottom: 50%;">
-                            <h1>Helping hands are better than praying lips.</h1>
+                            <h1>
+                                <?php 
+                                    echo get_theme_mod( 'slider_text_2', 'Helping hands are better than praying lips.' );
+                                ?>
+                            </h1>
                         </div><!--carousel-caption-->
                     </div><!--carousel-item-->
                     <div class="carousel-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/banner3.jpg" class="d-block w-100" style="height: 75vh;">
                         <div class="carousel-caption d-none d-md-block" style="bottom: 50%;">
-                            <h1>Be the light that helps others see</h1>
+                            <h1>
+                                <?php 
+                                    echo get_theme_mod( 'slider_text_3', 'Be the light that helps others see' );
+                                ?>
+                            </h1>
                         </div><!--carousel-caption-->
                     </div><!--carousel-item-->
                 </div><!--carousel-inner-->
