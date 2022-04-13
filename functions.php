@@ -60,6 +60,7 @@ function warraich_traders_widgets_init() {
         'after_title'      =>  '</h2>',
     ) );
  
+    /*********************** Section Widgets Area *************************/
     register_sidebar( array(
         'name'                =>  __( 'Section Widget 1', 'warraich_traders' ),
         'id'                     =>  'section-1',
@@ -86,7 +87,74 @@ function warraich_traders_widgets_init() {
         'before_title'    =>  '<h4 class="widget-title">',
         'after_title'      =>  '</h4>',
     ) );
+
+    /*********************** About Us Main Widgets Area *************************/
+    register_sidebar( array(
+        'name'                =>  __( 'About Main Widget 1', 'warraich_traders' ),
+        'id'                     =>  'about-main-1',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h4 class="widget-title">',
+        'after_title'      =>  '</h4>',
+    ) );
  
+    register_sidebar( array(
+        'name'                =>  __( 'About Main Widget 2', 'warraich_traders' ),
+        'id'                     =>  'about-main-2',
+        'before_widget' =>  '<div id="%1$s" class="tags %2$s">',
+        'after_widget'   =>  '</div>',
+        'before_title'    =>  '<h2 class="widget-title">',
+        'after_title'      =>  '</h2>',
+    ) );
+
+    /*********************** About Us Sub Widgets Area *************************/
+    register_sidebar( array(
+        'name'                =>  __( 'About Us Title', 'warraich_traders' ),
+        'id'                     =>  'about-title',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h2 class="widget-title">',
+        'after_title'      =>  '</h2>',
+    ) );
+
+    /*********************** About Us Widgets Area *************************/
+    register_sidebar( array(
+        'name'                =>  __( 'About Us Widget 1', 'warraich_traders' ),
+        'id'                     =>  'about-us-widget-1',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h4 class="widget-title">',
+        'after_title'      =>  '</h4>',
+    ) );
+
+    register_sidebar( array(
+        'name'                =>  __( 'About Us Widget 2', 'warraich_traders' ),
+        'id'                     =>  'about-us-widget-2',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h4 class="widget-title">',
+        'after_title'      =>  '</h4>',
+    ) );
+
+    register_sidebar( array(
+        'name'                =>  __( 'About Us Widget 3', 'warraich_traders' ),
+        'id'                     =>  'about-us-widget-3',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h4 class="widget-title">',
+        'after_title'      =>  '</h4>',
+    ) );
+
+    register_sidebar( array(
+        'name'                =>  __( 'About Us Widget 4', 'warraich_traders' ),
+        'id'                     =>  'about-us-widget-4',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h4 class="widget-title">',
+        'after_title'      =>  '</h4>',
+    ) );
+
+    /*********************** Footer Widgets Area *************************/
     register_sidebar( array(
         'name'                =>  __( 'Footer Widget 1', 'warraich_traders' ),
         'id'                     =>  'footer-1',
