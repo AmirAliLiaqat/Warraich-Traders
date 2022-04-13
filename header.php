@@ -17,33 +17,54 @@
 
     <!-- Header Start -->
     <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8">
-                        <div class="top-site-bar">
-                            <ul class="list-unstyled m-0 p-0">
-                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/phone.png"/>&nbsp;&nbsp; 0300-4516820</li>
-                                <li><img src="https://img.icons8.com/glyph-neue/20/333333/clock.png"/>&nbsp;&nbsp; MON - SUN: 09 AM - 09 PM</li>
-                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/secured-letter.png"/>&nbsp;&nbsp; ch_imtiazali@yahoo.com</a></li>
-                            </ul>
-                        </div><!--top-site-bar-->
-                    </div><!--col-xl-8-->
-                    <div class="col-xl-4 d-flex justify-content-end">
-                        <div class="top-site-bar">
-                            <ul class="list-unstyled m-0 p-0">
-                                <li><a href="" class="site-ancer d-none"><i class="fas fa-power-off"></i></a></li>
-                                <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/twitter.png"/></a></li>
-                                <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/logout-rounded.png"/></a></li>
-                            </ul>
-                        </div><!--top-site-bar-->
-                        <div class="clearboth"></div><!--clearboth-->
-                    </div><!--col-xl-4-->
-                </div><!--row-->
-            </div><!--container-->
-       </div><!--header-top-->
-       
-       <hr class="mt-2 mb-0">
+        <?php if ( true == get_theme_mod( 'toggle_header', 'on' ) ) : ?>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="top-site-bar">
+                                <ul class="list-unstyled m-0 p-0">
+                                    <li>
+                                        <img src="https://img.icons8.com/glyph-neue/20/333333/phone.png"/>
+                                        &nbsp;
+                                        <?php
+                                            echo get_theme_mod( 'header_text_1', '0300-4516820' );
+                                        ?>
+                                    </li>
+                                    <li>
+                                        <img src="https://img.icons8.com/glyph-neue/20/333333/clock.png"/>
+                                        &nbsp;
+                                        <?php
+                                            echo get_theme_mod( 'header_text_2', 'MON - SUN: 09 AM - 09 PM' );
+                                        ?>
+                                    </li>
+                                    <li>
+                                        <a href="" class="site-ancer">
+                                            <img src="https://img.icons8.com/glyph-neue/20/333333/secured-letter.png"/>
+                                            &nbsp;
+                                            <?php
+                                                echo get_theme_mod( 'header_text_3', 'ch_imtiazali@yahoo.com' );
+                                            ?>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--top-site-bar-->
+                        </div><!--col-xl-8-->
+                        <div class="col-xl-4 d-flex justify-content-end">
+                            <div class="top-site-bar">
+                                <ul class="list-unstyled m-0 p-0">
+                                    <li><a href="" class="site-ancer d-none"><i class="fas fa-power-off"></i></a></li>
+                                    <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/twitter.png"/></a></li>
+                                    <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/logout-rounded.png"/></a></li>
+                                </ul>
+                            </div><!--top-site-bar-->
+                            <div class="clearboth"></div><!--clearboth-->
+                        </div><!--col-xl-4-->
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--header-top-->
+            <hr class="mt-2 mb-0">
+        <?php endif; ?>
 
         <div class="header-main">
             <nav class="navbar navbar-expand-lg">
