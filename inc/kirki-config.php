@@ -24,6 +24,14 @@ Kirki::add_section( 'body_layout_settings', array(
     'icon'          => 'dashicons-image-filter',
 ) );
 
+Kirki::add_section( 'header_settings', array(
+    'title'       => esc_html__( 'Header Settings', 'kirki' ),
+    'description' => esc_html__( 'Manage Header Layout & Settings', 'kirki' ),
+    'panel'       => 'homepage_settings',
+    'priority'    => 10,
+    'icon'          => 'dashicons-admin-customizer',
+) );
+
 Kirki::add_section( 'menu_settings', array(
     'title'       => esc_html__( 'Menu Settings', 'kirki' ),
     'description' => esc_html__( 'Manage Menu Layout & Settings', 'kirki' ),
@@ -105,7 +113,6 @@ Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'image',
     'settings'    => 'slider_img_1',
     'label'       => esc_html__( 'Slider Image 1', 'kirki' ),
-    // 'description' => esc_html__( 'The saved value will be an array.', 'kirki' ),
     'section'     => 'slider_settings',
     'default'     => '',
     'choices'     => [
@@ -126,7 +133,6 @@ Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'image',
     'settings'    => 'slider_img_2',
     'label'       => esc_html__( 'Slider Image 2', 'kirki' ),
-    // 'description' => esc_html__( 'The saved value will be an array.', 'kirki' ),
     'section'     => 'slider_settings',
     'default'     => '',
     'choices'     => [
@@ -147,7 +153,6 @@ Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'image',
     'settings'    => 'slider_img_3',
     'label'       => esc_html__( 'Slider Image 3', 'kirki' ),
-    // 'description' => esc_html__( 'The saved value will be an array.', 'kirki' ),
     'section'     => 'slider_settings',
     'default'     => '',
     'choices'     => [
@@ -188,12 +193,76 @@ Kirki::add_field( 'warraich_traders_options', [
     ],
 ] );
 
-/************************** Nav background control ******************************/
+/************************** Header settings & control ******************************/
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'switch',
+    'settings'    => 'toggle_header',
+    'label'       => esc_html__( 'Switch Field', 'kirki' ),
+    'description' => esc_html__( 'Show/Hide Header', 'kirki' ),
+    'section'     => 'header_settings',
+    'default'     => '1',
+    'priority'    => 10,
+    'choices'     => [
+        'on'  => esc_html__( 'Enable', 'kirki' ),
+        'off' => esc_html__( 'Disable', 'kirki' ),
+    ],
+] );
+
 Kirki::add_field( 'warraich_traders_options', [
     'type'            => 'background',
-    'settings'      => 'background_setting',
+    'settings'      => 'header_background_setting',
+    'label'           => esc_html__( 'Header Background Control', 'kirki' ),
+    'description' => esc_html__( 'Header Background controls are pretty complex! (but useful if used properly)', 'kirki' ),
+    'section'       => 'header_settings',
+    'default'       => [
+        'background-color'           => '#fff',
+        'background-image'          => '',
+        'background-repeat'         => 'repeat',
+        'background-position'       => 'center center',
+        'background-size'             => 'cover',
+        'background-attachment' => 'scroll',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.header-top',
+        ],
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'header_text_1',
+    'label'    => esc_html__( 'Header Text Box 1', 'kirki' ),
+    'section'  => 'header_settings',
+    'default'  => esc_html__( '0300-4516820', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'header_text_2',
+    'label'    => esc_html__( 'Header Text Box 2', 'kirki' ),
+    'section'  => 'header_settings',
+    'default'  => esc_html__( 'MON - SUN: 09 AM - 09 PM', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'header_text_3',
+    'label'    => esc_html__( 'Header Text Box 3', 'kirki' ),
+    'section'  => 'header_settings',
+    'default'  => esc_html__( 'ch_imtiazali@yahoo.com', 'kirki' ),
+    'priority' => 10,
+] );
+
+/************************** Nav settings & control ******************************/
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'nav_background_setting',
     'label'           => esc_html__( 'Menu Background Control', 'kirki' ),
-    'description' => esc_html__( 'Menu Background conrols are pretty complex! (but useful if used properly)', 'kirki' ),
+    'description' => esc_html__( 'Menu Background controls are pretty complex! (but useful if used properly)', 'kirki' ),
     'section'       => 'menu_settings',
     'default'       => [
         'background-color'           => '#fff',
