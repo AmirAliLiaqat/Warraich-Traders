@@ -30,11 +30,8 @@ get_header();
     <section>
         <div class="container">
             <div class="row mb-5">
-                <div class="col-md-12">
-                    <h1 class="site_h1 my-4">House Plans</h1>
-                    <div class="house_plan_img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/house_plans.jpg" class="w-100">
-                    </div><!--house_plan_img-->
+                <div class="col-md-12 py-4">
+                    <?php dynamic_sidebar('house_price_widget'); ?>
                 </div><!--col-md-12-->
             </div><!--row-->
         </div><!--container-->
