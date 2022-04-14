@@ -127,53 +127,6 @@ function warraich_traders_widgets_init() {
         'after_title'      =>  '</h2>',
     ) );
 
-    /*********************** About Us Widgets Area *************************/
-    register_sidebar( array(
-        'name'                =>  __( 'About Us Widget 1', 'warraich_traders' ),
-        'id'                     =>  'about-us-widget-1',
-        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
-        'after_widget'   =>  '<p>',
-        'before_title'    =>  '<h4 class="widget-title">',
-        'after_title'      =>  '</h4>',
-    ) );
-
-    register_sidebar( array(
-        'name'                =>  __( 'About Us Widget 2', 'warraich_traders' ),
-        'id'                     =>  'about-us-widget-2',
-        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
-        'after_widget'   =>  '<p>',
-        'before_title'    =>  '<h4 class="widget-title">',
-        'after_title'      =>  '</h4>',
-    ) );
-
-    register_sidebar( array(
-        'name'                =>  __( 'About Us Widget 3', 'warraich_traders' ),
-        'id'                     =>  'about-us-widget-3',
-        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
-        'after_widget'   =>  '<p>',
-        'before_title'    =>  '<h4 class="widget-title">',
-        'after_title'      =>  '</h4>',
-    ) );
-
-    register_sidebar( array(
-        'name'                =>  __( 'About Us Widget 4', 'warraich_traders' ),
-        'id'                     =>  'about-us-widget-4',
-        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
-        'after_widget'   =>  '<p>',
-        'before_title'    =>  '<h4 class="widget-title">',
-        'after_title'      =>  '</h4>',
-    ) );
-
-    /*********************** House Price Widget Area *************************/
-    register_sidebar( array(
-        'name'                =>  __( 'House Price Title & Image', 'warraich_traders' ),
-        'id'                     =>  'house_price_widget',
-        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
-        'after_widget'   =>  '<p>',
-        'before_title'    =>  '<h2 class="widget-title">',
-        'after_title'      =>  '</h2>',
-    ) );
-
     /*********************** Footer Widgets Area *************************/
     register_sidebar( array(
         'name'                =>  __( 'Footer Widget 1', 'warraich_traders' ),
@@ -213,5 +166,6 @@ require get_template_directory() . '/inc/kirki-config.php';
 
 // Adding Custom Post Types
 require get_template_directory() . '/inc/projects.php';
+require get_template_directory() . '/inc/team.php';
 
 ?>
