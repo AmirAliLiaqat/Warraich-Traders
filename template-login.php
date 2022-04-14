@@ -55,12 +55,12 @@ get_header();
     <section>
         <div class="container">
             <div class="logo text-center my-5">
-                <a href="index.php" class="site-ancer">
+                <a href="" class="site-ancer">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
                 </a>
             </div><!--logo-->
             <div class="row">
-                <div class="col-md-3 p-3 m-auto" style="background-color: #f1f1f1;">
+                <div class="col-md-3 p-3 m-auto login_bg">
                     <?php echo get_theme_mod( 'login_code_setting', '' ); ?>
                 </div><!--col-md-3-->
             </div><!--row-->
