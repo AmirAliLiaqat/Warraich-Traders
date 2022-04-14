@@ -126,6 +126,27 @@ section .carousel .carousel-inner .carousel-item .carousel-caption h1{
     background-position: center;
     background-size: cover;
 }
+.wp-image-300{
+    width: 70px;
+    height: 70px;
+}
+#block-61, #block-63, #block-65
+{
+    display: none;
+}
+.wp-container-5 .wp-block-group__inner-container p:nth-child(2), .about-title p{
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-image-363{
+    margin-top: 30px;
+}
+.home_banner p{
+    max-width: 50% !important;
+    color: var(--white);
+    margin-top: 15px;
+}
 .bg_index{
     /* background-image: url(../images/home-price-bg.jpg); */
     background: var(--black);
@@ -153,21 +174,6 @@ footer .wp-block-group__inner-container h3{
 }
 footer p{
     color: var(--gray);
-}
-.wp-image-300{
-    width: 70px;
-    height: 70px;
-}
-#block-61, #block-63{
-    display: none;
-}
-.wp-container-5 .wp-block-group__inner-container p:nth-child(2), .about-title p{
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.wp-image-363{
-    margin-top: 30px;
 }
 
 /************* Dashboard Css ************/
