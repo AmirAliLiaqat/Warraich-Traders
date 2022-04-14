@@ -28,7 +28,7 @@ function warraich_traders_theme_setup() {
 }
 add_action('after_setup_theme', 'warraich_traders_theme_setup');
 
-/************** Function using for adding styles and scripts links **************/
+/************** Function use for adding styles and scripts links **************/
 function warraich_traders_enqueue_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css' );
@@ -40,7 +40,7 @@ function warraich_traders_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'warraich_traders_enqueue_scripts'); 
  
-/************** Function using for adding sidebar widgets **************/
+/************** Function use for adding sidebar widgets **************/
 function warraich_traders_widgets_init() {
     register_sidebar( array(
         'name'                =>  __( 'Banner Upper Section', 'warraich_traders' ),
@@ -86,6 +86,16 @@ function warraich_traders_widgets_init() {
         'after_widget'   =>  '</p>',
         'before_title'    =>  '<h4 class="widget-title">',
         'after_title'      =>  '</h4>',
+    ) );
+
+    /*********************** Homepage Banner Widget Area *************************/
+    register_sidebar( array(
+        'name'                =>  __( 'Homepage Banner Content', 'warraich_traders' ),
+        'id'                     =>  'home-banner',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h2 class="widget-title">',
+        'after_title'      =>  '</h2>',
     ) );
 
     /*********************** About Us Main Widgets Area *************************/
