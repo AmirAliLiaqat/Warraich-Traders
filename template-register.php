@@ -59,21 +59,7 @@ get_header();
             </div><!--logo-->
             <div class="row">
                 <div class="col-md-5 p-3 m-auto" style="background-color: #f1f1f1;">
-                    <form action="" method="post">
-                        <label for="fname" class="form-label" style="font-size: 14px;">First Name</label>
-                        <input type="text" class="form-control mb-3" name="fname" required>
-                        <label for="lname" class="form-label" style="font-size: 14px;">Last Name</label>
-                        <input type="text" class="form-control mb-3" name="lname" required>
-                        <label for="email" class="form-label" style="font-size: 14px;">Email</label>
-                        <input type="text" class="form-control mb-3" name="email" required>
-                        <label for="phone" class="form-label" style="font-size: 14px;">Phone</label>
-                        <input type="text" class="form-control mb-3" name="phone" required>
-                        <label for="password" class="form-label" style="font-size: 14px;">Password</label>
-                        <input type="password" class="form-control mb-3" name="password" required>
-                        <label for="cpassword" class="form-label" style="font-size: 14px;">Confirm Password</label>
-                        <input type="password" class="form-control" name="cpassword" required>
-                        <button class="py-1 px-3 my-3 text-white" style="background: #008ec2;" type="submit" name="register">Register</button>
-                    </form>
+                    <?php echo get_theme_mod( 'register_code_setting', '' ); ?>
                 </div><!--col-md-5-->
             </div><!--row-->
         </div><!--container-->
