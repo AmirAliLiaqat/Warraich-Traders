@@ -95,26 +95,22 @@ get_header();
             </div><!--row-->
 
             <div class="row my-4">
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-1.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-2.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-3.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-4.jpg">
-                   </a>
-                </div><!--col-md-3-->
+                <?php
+                    $project_args = array(
+                        'post_type' => 'project',
+                        'posts_per_page' => 8,
+                        'order' => 'ASC',
+                    );
+                    $project_posts = new WP_Query($project_args);
+                    while($project_posts->have_posts()) {
+                        $project_posts->the_post();
+                ?>
+                    <div class="col-md-3">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <?php the_content(); ?>
+                        </a>
+                    </div><!--col-md-3-->
+                <?php } ?>
             </div><!--row-->
 
             <!-- Modal -->
@@ -166,28 +162,6 @@ get_header();
                 </div><!--modal-dialog-->
             </div><!--modal-->
             
-            <div class="row pb-5">
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-5.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/home-project-6.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/banner3.jpg">
-                   </a>
-                </div><!--col-md-3-->
-                <div class="col-md-3">
-                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg">
-                   </a>
-                </div><!--col-md-3-->
-            </div><!--row-->
         </div><!--container-->
     </section>
     <!-- Section End -->
