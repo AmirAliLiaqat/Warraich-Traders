@@ -15,11 +15,11 @@ get_header();
                     <div class="col-md-12">
                         <h4 class="text-center text-white">House Price</h4>
                         <div class="text-center text-white p-3">
-                            <a href="index.php" class="text-decoration-none text-white">Home</a>
+                            <a href="http://localhost/wordpress/" class="text-decoration-none text-white">Home</a>
                             &nbsp;
                             <img src="https://img.icons8.com/glyph-neue/20/FFFFFF/long-arrow-right.png"/>
                             &nbsp;
-                            <a href="house-price.php" class="text-decoration-none text-white">House Price</a>
+                            <a href="" class="text-decoration-none text-white">House Price</a>
                         </div>
                     </div><!--col-md-12-->
                 </div><!--row-->
