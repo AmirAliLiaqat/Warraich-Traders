@@ -16,6 +16,7 @@ Kirki::add_panel( 'homepage_settings', array(
     'icon'    => 'dashicons-layout',
 ) );
 
+/************************** Home Page All Sections ******************************/
 Kirki::add_section( 'body_layout_settings', array(
     'title'       => esc_html__( 'Layout', 'kirki' ),
     'description' => esc_html__( 'Manage Body Layout', 'kirki' ),
@@ -48,6 +49,17 @@ Kirki::add_section( 'slider_settings', array(
     'icon'    => 'dashicons-admin-page',
 ) );
 
+Kirki::add_section( 'banner_settings', array(
+    'title'       => esc_html__( 'Banner Settings', 'kirki' ),
+    'description' => esc_html__( 'Manage Site All Banners', 'kirki' ),
+    'panel'       => 'homepage_settings',
+    'priority'    => 10,
+    'icon'    => 'dashicons-archive',
+) );
+
+/************************** Page All Sections ******************************/
+
+/************************** Footer Section ******************************/
 Kirki::add_section( 'footer_settings', array(
     'title'       => esc_html__( 'Footer Layout', 'kirki' ),
     'description' => esc_html__( 'Manage Footer Copyright Text', 'kirki' ),
@@ -55,6 +67,7 @@ Kirki::add_section( 'footer_settings', array(
     'icon'    => 'dashicons-edit',
 ) );
 
+/************************** Typography Section ******************************/
 Kirki::add_section( 'typography_settings', array(
     'title'       => esc_html__( 'Typography', 'kirki' ),
     'description' => esc_html__( 'Text Styles & Options', 'kirki' ),
@@ -159,6 +172,39 @@ Kirki::add_field( 'warraich_traders_options', [
         'save_as' => 'array',
     ],
 ] );
+
+/************************** Banners controls ******************************/
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'switch',
+    'settings'    => 'toggle_banner',
+    'label'       => esc_html__( 'Switch Field', 'kirki' ),
+    'description' => esc_html__( 'Show/Hide Site All Banners', 'kirki' ),
+    'section'     => 'banner_settings',
+    'default'     => '1',
+    'priority'    => 10,
+    'choices'     => [
+        'on'  => esc_html__( 'Enable', 'kirki' ),
+        'off' => esc_html__( 'Disable', 'kirki' ),
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'banner_background_setting',
+    'label'           => esc_html__( 'Menu Background Control', 'kirki' ),
+    'description' => esc_html__( 'Menu Background controls are pretty complex! (but useful if used properly)', 'kirki' ),
+    'section'       => 'banner_settings',
+    'default'       => [
+        'background-color'           => '#000',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.bg_img',
+        ],
+    ],
+] );
+
 /************************** Home typography ******************************/
 Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'typography',
