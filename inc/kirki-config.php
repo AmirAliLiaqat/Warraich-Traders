@@ -72,6 +72,14 @@ Kirki::add_section( 'contact_page_settings', array(
     'icon'    => 'dashicons-clipboard',
 ) );
 
+Kirki::add_section( 'login_page_settings', array(
+    'title'       => esc_html__( 'Login Page Settings', 'kirki' ),
+    'description' => esc_html__( 'Manage Complate Login Page', 'kirki' ),
+    'panel'       => 'all_page_settings',
+    'priority'    => 10,
+    'icon'    => 'dashicons-clipboard',
+) );
+
 /************************** Footer Section ******************************/
 Kirki::add_section( 'footer_settings', array(
     'title'       => esc_html__( 'Footer Layout', 'kirki' ),
@@ -321,6 +329,18 @@ Kirki::add_field( 'warraich_traders_options', [
     ],
 ] );
 
+/************************** Login Page controls ******************************/
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'code',
+    'settings'    => 'code_setting',
+    'label'       => esc_html__( 'Code Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the login page with write code.', 'kirki' ),
+    'section'     => 'login_page_settings',
+    'default'     => '',
+    'choices'     => [
+        'language' => 'html',
+    ],
+] );
 /************************** Home typography ******************************/
 Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'typography',
