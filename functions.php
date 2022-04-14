@@ -127,6 +127,16 @@ function warraich_traders_widgets_init() {
         'after_title'      =>  '</h2>',
     ) );
 
+    /*********************** House Price Widget Area *************************/
+    register_sidebar( array(
+        'name'                =>  __( 'House Price Title & Image', 'warraich_traders' ),
+        'id'                     =>  'house_price_widget',
+        'before_widget' =>  '<p id="%1$s" class="widget %2$s">',
+        'after_widget'   =>  '<p>',
+        'before_title'    =>  '<h2 class="widget-title">',
+        'after_title'      =>  '</h2>',
+    ) );
+
     /*********************** Footer Widgets Area *************************/
     register_sidebar( array(
         'name'                =>  __( 'Footer Widget 1', 'warraich_traders' ),
