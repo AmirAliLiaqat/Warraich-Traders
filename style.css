@@ -75,10 +75,10 @@ h4{
     border-radius: 50%;
 }
 .site_btn{
-    background: var(--blue) !important;
+    background: var(--blue);
 }
 .site_btn:hover{
-    background: var(--casal) !important;
+    background: var(--casal);
 }
 header .header-top{
     font-size: 0.8461538462rem;
