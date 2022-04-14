@@ -8,22 +8,24 @@ get_header();
 ?>
 
     <!-- Section Start -->
-    <section class="bg_contact bg_img">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-12">
-                    <h4 class="text-center text-white">Contact Us</h4>
-                    <div class="text-center text-white p-3">
-                        <a href="index.php" class="text-decoration-none text-white">Home</a>
-                        &nbsp;
-                        <img src="https://img.icons8.com/glyph-neue/20/FFFFFF/long-arrow-right.png"/>
-                        &nbsp;
-                        <a href="contact.php" class="text-decoration-none text-white">Contact Us</a>
-                    </div>
-                </div><!--col-md-12-->
-            </div><!--row-->
-        </div><!--container-->
-    </section>
+    <?php if ( true == get_theme_mod( 'toggle_banner', 'on' ) ) : ?>
+        <section class="bg_contact bg_img">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-12">
+                        <h4 class="text-center text-white">Contact Us</h4>
+                        <div class="text-center text-white p-3">
+                            <a href="index.php" class="text-decoration-none text-white">Home</a>
+                            &nbsp;
+                            <img src="https://img.icons8.com/glyph-neue/20/FFFFFF/long-arrow-right.png"/>
+                            &nbsp;
+                            <a href="contact.php" class="text-decoration-none text-white">Contact Us</a>
+                        </div>
+                    </div><!--col-md-12-->
+                </div><!--row-->
+            </div><!--container-->
+        </section>
+    <?php endif; ?>
     <!-- Section End -->
 
     <!-- Section Start -->
