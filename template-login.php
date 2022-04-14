@@ -61,13 +61,7 @@ get_header();
             </div><!--logo-->
             <div class="row">
                 <div class="col-md-3 p-3 m-auto" style="background-color: #f1f1f1;">
-                    <form action="" method="post">
-                        <label for="email" class="form-label" style="font-size: 14px;">Username or Email Address</label>
-                        <input type="text" class="form-control mb-4" name="email">
-                        <label for="password" class="form-label" style="font-size: 14px;">Password</label>
-                        <input type="password" class="form-control" name="password">
-                        <button class="py-1 px-3 my-3 text-white" style="background: #008ec2;" type="submit" name="login">Login</button>
-                    </form>
+                    <?php echo get_theme_mod( 'login_code_setting', '' ); ?>
                 </div><!--col-md-3-->
             </div><!--row-->
         </div><!--container-->
