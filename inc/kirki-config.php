@@ -350,6 +350,39 @@ Kirki::add_field( 'warraich_traders_options', [
     ],
 ] );
 
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'login_background_color',
+    'label'           => esc_html__( 'Login Page Background Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the login page background color.', 'kirki' ),
+    'section'       => 'login_page_settings',
+    'default'       => [
+        'background-color'           => '#f1f1f1',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.login_bg',
+        ],
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'login_button_color',
+    'label'           => esc_html__( 'Login Page Button Background Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the login page button background color.', 'kirki' ),
+    'section'       => 'login_page_settings',
+    'default'       => [
+        'background-color'           => '#008ec2',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.login_btn',
+        ],
+    ],
+] );
 /************************** Register Page controls ******************************/
 Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'code',
@@ -362,6 +395,41 @@ Kirki::add_field( 'warraich_traders_options', [
         'language' => 'html',
     ],
 ] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'register_background_color',
+    'label'           => esc_html__( 'Register Page Background Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the register page background color.', 'kirki' ),
+    'section'       => 'register_page_settings',
+    'default'       => [
+        'background-color'           => '#f1f1f1',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.register_bg',
+        ],
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'register_button_color',
+    'label'           => esc_html__( 'Register Page Button Background Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the register page button background color.', 'kirki' ),
+    'section'       => 'register_page_settings',
+    'default'       => [
+        'background-color'           => '#008ec2',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.register_btn',
+        ],
+    ],
+] );
+
 /************************** Home typography ******************************/
 Kirki::add_field( 'warraich_traders_options', [
     'type'    => 'typography',
