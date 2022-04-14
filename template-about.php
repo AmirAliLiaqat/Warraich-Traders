@@ -46,26 +46,28 @@ get_header();
     <!-- Section End -->
 
     <!-- Section Start -->
-    <section>
+    <section style="background:#fafafc; padding:30px 0 30px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center about-title">
                     <?php dynamic_sidebar('about-title'); ?>
                 </div><!--col-12-->
             </div><!--row-->
-            <div class="row my-5">
-                <div class="col-md-3 our_team_img text-center">
-                    <?php dynamic_sidebar('about-us-widget-1'); ?>
-                </div><!--col-md-3-->
-                <div class="col-md-3 our_team_img text-center">
-                    <?php dynamic_sidebar('about-us-widget-2'); ?>
-                </div><!--col-md-3-->
-                <div class="col-md-3 our_team_img text-center">
-                    <?php dynamic_sidebar('about-us-widget-3'); ?>
-                </div><!--col-md-3-->
-                <div class="col-md-3 our_team_img text-center">
-                    <?php dynamic_sidebar('about-us-widget-4'); ?>
-                </div><!--col-md-3-->
+            <div class="row my-5 bg-white">
+                <?php
+                    $project_args = array(
+                        'post_type' => 'team',
+                        'posts_per_page' => 8,
+                        'order' => 'ASC',
+                    );
+                    $project_posts = new WP_Query($project_args);
+                    while($project_posts->have_posts()) {
+                        $project_posts->the_post();
+                ?>
+                    <div class="col-md-3 our_team_img text-center">
+                        <?php the_content(); ?>
+                    </div><!--col-md-3-->
+                <?php } ?>
             </div><!--row-->
         </div><!--container-->
     </section>
