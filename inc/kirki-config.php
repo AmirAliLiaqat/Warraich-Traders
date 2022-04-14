@@ -16,6 +16,12 @@ Kirki::add_panel( 'homepage_settings', array(
     'icon'    => 'dashicons-layout',
 ) );
 
+Kirki::add_panel( 'all_page_settings', array(
+    'title'       => esc_html__( 'Pages Layout Settings', 'kirki' ),
+    'priority'    => 10,
+    'icon'    => 'dashicons-admin-page',
+) );
+
 /************************** Home Page All Sections ******************************/
 Kirki::add_section( 'body_layout_settings', array(
     'title'       => esc_html__( 'Layout', 'kirki' ),
@@ -58,6 +64,13 @@ Kirki::add_section( 'banner_settings', array(
 ) );
 
 /************************** Page All Sections ******************************/
+Kirki::add_section( 'contact_page_settings', array(
+    'title'       => esc_html__( 'Contact Page Settings', 'kirki' ),
+    'description' => esc_html__( 'Manage All Contact Page', 'kirki' ),
+    'panel'       => 'all_page_settings',
+    'priority'    => 10,
+    'icon'    => 'dashicons-clipboard',
+) );
 
 /************************** Footer Section ******************************/
 Kirki::add_section( 'footer_settings', array(
@@ -201,6 +214,109 @@ Kirki::add_field( 'warraich_traders_options', [
     'output'      => [
         [
             'element' => '.bg_img',
+        ],
+    ],
+] );
+
+/************************** Contact Page controls ******************************/
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'switch',
+    'settings'    => 'toggle_map',
+    'label'       => esc_html__( 'Switch Field', 'kirki' ),
+    'description' => esc_html__( 'Show/Hide Contact Page Map Section', 'kirki' ),
+    'section'     => 'contact_page_settings',
+    'default'     => '1',
+    'priority'    => 10,
+    'choices'     => [
+        'on'  => esc_html__( 'Enable', 'kirki' ),
+        'off' => esc_html__( 'Disable', 'kirki' ),
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_header',
+    'label'    => esc_html__( 'Contact Header Text', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( 'Contact Details', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_text_1',
+    'label'    => esc_html__( 'Contact Text Box 1', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( 'Near 5 No.Bus Stop, Main Ferozpur Road, Kahna Nau, Lahore, Pakistan', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_text_2',
+    'label'    => esc_html__( 'Contact Text Box 2', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( '0300-4516820', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_text_3',
+    'label'    => esc_html__( 'Contact Text Box 3', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( 'ch_imtiazali@yahoo.com', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_text_4',
+    'label'    => esc_html__( 'Contact Text Box 4', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( '09 AM - 09 PM', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'    => 'text',
+    'settings' => 'contact_button',
+    'label'    => esc_html__( 'Contact Button Text', 'kirki' ),
+    'section'  => 'contact_page_settings',
+    'default'  => esc_html__( 'Send Message', 'kirki' ),
+    'priority' => 10,
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'contact_button_background_color',
+    'label'           => esc_html__( 'Contact Button Background Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the contact page button background color', 'kirki' ),
+    'section'       => 'contact_page_settings',
+    'default'       => [
+        'background-color'           => '#074284',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.site_btn',
+        ],
+    ],
+] );
+
+Kirki::add_field( 'warraich_traders_options', [
+    'type'            => 'background',
+    'settings'      => 'contact_button_background_hover_color',
+    'label'           => esc_html__( 'Contact Button Background Hover Control', 'kirki' ),
+    'description' => esc_html__( 'Manage the contact page button hover background color', 'kirki' ),
+    'section'       => 'contact_page_settings',
+    'default'       => [
+        'background-color'           => '#475153',
+    ],
+    'transport' => 'auto',
+    'output'      => [
+        [
+            'element' => '.site_btn:hover',
         ],
     ],
 ] );
