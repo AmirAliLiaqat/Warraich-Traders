@@ -89,13 +89,8 @@ get_header();
      <section class="bg_index bg_img">
         <div class="container">
             <div class="row text-white py-5">
-                <div class="col-12">
-                    <h2 class="text-center">Recent Projects</h2>
-                    <div class="text-center">
-						<p class="text-white" style="max-width:50%; margin:0 auto;">
-                            Warraich Traders has completed many major construction projects. Below you will find photos from our portfolio to see the type of work we have done.
-                        </p> 
-					</div><!--text-center-->
+                <div class="col-12 text-center text-white home_banner">
+                    <?php dynamic_sidebar('home-banner'); ?>
                 </div><!--col-12-->
             </div><!--row-->
 
