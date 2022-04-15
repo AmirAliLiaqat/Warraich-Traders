@@ -53,9 +53,9 @@
                         <div class="col-xl-4 d-flex justify-content-end">
                             <div class="top-site-bar">
                                 <ul class="list-unstyled m-0 p-0">
-                                    <li><a href="" class="site-ancer d-none"><i class="fas fa-power-off"></i></a></li>
+                                    <li><a href="" class="site-ancer d-none"><img src="https://img.icons8.com/glyph-neue/20/333333/shutdown.png"/></a></li>
                                     <li><a href="" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/twitter.png"/></a></li>
-                                    <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/logout-rounded.png"/></a></li>
+                                    <li><a href="login.php" class="site-ancer"><img src="https://img.icons8.com/glyph-neue/20/333333/export.png"/></a></li>
                                 </ul>
                             </div><!--top-site-bar-->
                             <div class="clearboth"></div><!--clearboth-->
